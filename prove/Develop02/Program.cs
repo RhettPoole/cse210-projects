@@ -10,7 +10,7 @@ class Program
         Journal journal = new Journal();
 
         // Array of prompts
-        string[] prompts = { "What did you learn today?", "How do you feel right now?", "What are you grateful for today?" };
+        string[] _prompts = { "What did you learn today?", "How do you feel right now?", "What are you grateful for today?" };
 
         bool exit = false;
 
@@ -34,7 +34,7 @@ class Program
                 case "1":
                     // Get a random prompt from the array
                     Random rand = new Random();
-                    string prompt = prompts[rand.Next(prompts.Length)];
+                    string prompt = _prompts[rand.Next(_prompts.Length)];
 
                     // Ask the user for their response to the prompt
                     Console.Write(prompt + " ");
