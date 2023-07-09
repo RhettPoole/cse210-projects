@@ -29,7 +29,7 @@ class Program
         // Display packing labels, shipping labels, and total prices
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
-        Console.WriteLine("Total Price: $" + order2.CalculateTotalCost());
+        Console.WriteLine("Total Price: $" + order1.CalculateTotalCost());
 
         Console.WriteLine();
 
